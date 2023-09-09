@@ -1,6 +1,87 @@
 /*Name-Purvansha Gehlod
 PRN-22070123088
 Exp_11
+Find the volume of cube*/
+#include<iostream>
+using namespace std;
+class cuboid
+{
+public:
+double height=2.0;
+double width=3.0;
+double length=5.0;
+};
+int main()
+{
+    cuboid c1;
+    double vol=c1.height*c1.width*c1.length;
+    cout<<"Volume:"<<vol<<endl;
+
+    
+}
+/*OUTPUT
+Volume:30
+*/
+
+/*Name-Purvansha Gehlod
+PRN-22070123088
+Exp_11
+Write a function to display output*/
+#include<iostream>
+using namespace std;
+class cuboid{
+    public:
+    float l =3.0,w=5.0,h=7.0;
+
+    float display (float a){
+        cout<<"volume of cuboid ="<<a;
+    }
+};
+int main()
+{
+    cuboid c1;
+    float vol=c1.l*c1.w*c1.h;
+    c1.display(vol);
+}
+/*Output
+volume of cuboid =105
+*/
+
+/*Name-Purvansha Gehlod
+PRN-22070123088
+Exp_11
+Take input from user
+*/
+#include<iostream>
+using namespace std;
+class cuboid
+{
+public:
+float calculate(float a,float b,float c){
+    float vol=a*b*c;
+    return vol;
+}
+float display(float a){
+    cout<<"Volume of cuboid="<<a;
+    }
+};
+int main(){
+    cuboid c1;
+    float h,b,l;
+    cout<<"enter the length,breath and height:";
+    cin>>l>>b>>h;
+    float vol=c1.calculate(l,b,h);
+    c1.display(vol);
+
+}
+/*OUTPUT
+enter the length,breath and height:5 5 5 
+Volume of cuboid=125
+*/
+
+/*Name-Purvansha Gehlod
+PRN-22070123088
+Exp_11
 shapes_vol_class*/
 #include<iostream>
 using namespace std;
